@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Exercise:Multiple Choice Question</title>
+  <style type="text/css">
+    .mcq {
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+    .options{
+      margin-right: 8px;
+
+    }
+
+    .answer{
+      font-weight: bold;
+    }
+
+    .center {
+      max-width:  600px;
+      margin: 0 auto;
+      padding:  20px;
+      border-radius:  8px;
+    }
+
+    body{
+      background-color: #F6EAB0;
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-family:  Arial, ;
+    }
+
+    h2{
+      color: darkblue;
+    }
+
+    h3,h4{
+      color:darkred;
+    }
+
+    h5{
+          color: grey;
+          font-family:sans-serif ;
+    }
+
+    table {
+      border-collapse: collapse; width: 80%;
+    }
+
+    th,td{
+      border: 2px solid black; padding: 6px; text-align: left;
+    }
+
+    th{
+      font-weight: bold;
+    }
+
+    thead{
+      background-color: #f2f2f2;
+    } 
+
+    p{
+      margin: 10px 0; line-height: 1.5;
+    }
+
+    span{
+      font-weight: bold;
+    }
+
+    #highlight {
+      font-weight: bold;
+    }
+
+  </style>
+</head>
+<body>
+<div class="center">
+  <div class="mcq">
+    <h4>Question 1:Which of the following is the function of HTTPS?<h4>
+  </div>
+
+      <div class="options">
+        <input type="radio" name="q1" value="A"> A)Access and retrieve to web resources
+      </div>
+      <div class="options">
+        <input type="radio" name="q1" value="B"> B)Transfer different types of contents on the internet
+      </div>
+      <div class="options">  
+        <input type="radio" name="q1" value="C"> C)Encrypt and authenticate to ensure the confidentiality
+      </div>
+      <div class="options">
+        <input type="radio" name="q1" value="D"> D)Lock up the files over internet
+      </div>
+
+  <div class="mcq">
+    <h4>Question 2:Which legal and regulatory standards requires using HTTPS?</h4>
+  </div>
+      <div class="options">
+        <input type="radio" name="q2" value="A"> A)GDPR
+      </div>
+      <div class="options">
+        <input type="radio" name="q2" value="B"> B)PCI DSS
+      </div>
+      <div class="options">  
+        <input type="radio" name="q2" value="C"> C)HIPAA
+      </div>
+      <div class="options">
+        <input type="radio" name="q2" value="D"> D)All of the above
+      </div>
+
+  <div class="mcq">
+    <h4>Question 3:Which of the following is a similarity between HTTP and HTTPS?</h4>
+  </div>
+      <div class="options">
+        <input type="radio" name="q3" value="A"> A)HTTP uses SSL/TLS encryption for data transmission
+      </div>
+      <div class="options">
+        <input type="radio" name="q3" value="B"> B)Both HTTP and HTTPS have different URL schemes
+      </div>
+      <div class="options">  
+        <input type="radio" name="q3" value="C"> C)HTTP and HTTPS follow a client-server model
+      </div>
+      <div class="options">
+        <input type="radio" name="q3" value="D"> D)HTTPS does not provide any built-in authentication mechanisms
+      </div>
+
+  <div class="mcq">
+    <h4>Question 4:Which is the advantage of Asymmetric encryptions?</h4>
+  </div>
+      <div class="options">
+        <input type="radio" name="q4" value="A"> A)Faster speed and simple use
+      </div>
+      <div class="options">
+        <input type="radio" name="q4" value="B"> B)Higher efficiency
+      </div>
+      <div class="options">  
+        <input type="radio" name="q4" value="C"> C)Higher security
+      </div>
+      <div class="options">
+        <input type="radio" name="q4" value="D"> D)Higher compatibility
+      </div>
+
+
+  <button onclick="Lookattheanswer()"> Submit </button>
+
+<script type="text/javascript">
+  function Lookattheanswer() {
+    var answers = {
+      q1:"C",
+      q2:"D",
+      q3:"C",
+      q4:"C"
+    };
+
+    var result = "";
+
+    for (var i = 1; i <= 4; i++) {
+      var optionchosen = document.querySelector('input[name="q' + i + '"]:checked');
+
+      if (optionchosen && optionchosen.value === answers["q" + i]) {
+        result += "Question" + i +": Correct\n";
+      }
+      else{
+        result += "Question" + i + ": Incorrect. The correct answer is " + answers["q" + i] + "\n";
+      }
+    }
+
+    alert(result);
+  }
+</script>
+
+  <div><h5><em>CS1102 - Course Project - 2023/2024 Semester B</em></h5></div>
+</body>
+</html>
