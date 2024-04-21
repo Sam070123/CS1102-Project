@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CS1102 </title>
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+
+    h5{
+          color: grey;
+          font-family:sans-serif ;
+    }
+
+    p{
+      margin: 10px 0; line-height: 1.5;
+    }
+
+    body{
+	   background-color: #EEDF95;
+	   background-repeat: no-repeat;
+	   background-size: cover;
+    }
+
+    td {
+      border: 1px solid black;
+      padding: 10px;
+    }
+
+    span  {
+      color: red;font-weight: bold;
+    }
+
+    #highlight {
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>4.Encrypt method</h2>
+  <p>HTTPS uses a Transport Layer Security (TLS)/ Secure Sockets Layer (SSL) to encrypt messages between a client and server.
+  	<a href="https://www.techtarget.com/searchsoftwarequality/definition/HTTPS" target="	_blank">(Awati, 2022)</a> 
+  	There are two primary types of Encryption which are symmetric encryptions and asymmetric encryptions. Symmetric encryption uses the same key for both the encryption and decryption of a message, while asymmetric encryption applies a public key and a private key to perform the encryption and decryption.
+  	<a href="https://www.deviceauthority.com/blog/symmetric-encryption-vs-asymmetric-encryption/" target="	_blank">(José,2023)</a>
+  	Both encryption methods have advantages and disadvantages as mentioned below:
+  </p>
+  <table>
+    <tr>
+      <td></td>
+      <td id="highlight">Symmetric encryptions</td>
+      <td id="highlight">Asymmetric encryptions</td>
+    </tr>
+    <tr>
+      <td>Advantage</td>
+      <td>
+        <ul>
+          <li><span>Faster speed and simple use</span>: It requires a single key to encrypt.
+          	<a href="https://www.deviceauthority.com/blog/symmetric-encryption-vs-asymmetric-encryption/" target="	_blank">(José,2023)</a></li>
+          <li><span>Higher efficiency</span>: Significant time and cost savings can be achieved by adopting less processing power and resources for encryption and decryption.
+          	<a href="https://www.deviceauthority.com/blog/symmetric-encryption-vs-asymmetric-encryption/" target="	_blank">(José,2023)</a></li>
+          <li><span>Higher compatibility</span>: It has widespread adoption and support of software and hardware platforms to ensure seamless integration with current applications and systems, often without requiring significant modifications.
+          	<a href="https://www.deviceauthority.com/blog/symmetric-encryption-vs-asymmetric-encryption/" target="	_blank">(José,2023)</a></li>
+        </ul>
+        </td>
+      <td>
+        <ul>
+          <li><span>Higher security</span>: The private key used for decryption can reject unauthorized access to the data.
+          	<a href="https://www.deviceauthority.com/blog/symmetric-encryption-vs-asymmetric-encryption/" target="	_blank">(José,2023)</a></li>
+          <li><span>Higher flexibility</span>: It offers widespread versatility, making it suitable for various applications.
+          	<a href="https://www.deviceauthority.com/blog/symmetric-encryption-vs-asymmetric-encryption/" target="	_blank">(José,2023)</a></li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Disadvantages</td>
+      <td>
+        <ul>
+          <li><span>Lower security</span>: Lower security: It has the possibility to have the risk of compromised keys, which could expose all encrypted messages, Then, interception by anyone with access to the key is possible.
+          	<a href="https://www.newsoftwares.net/blog/dark-side-of-symmetric-key-encryption/#Encryption_Methods_That_Uses_A_Single_Key_To_Encrypt_And_Decrypt_Data" target="	_blank">(Rossevelt,2023)</a>
+          </li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>
+            <span>Slower and complex to use</span>:It requires computationally intensive processes, longer key lengths, and complex algorithms, which may slow down networks
+            <a href=" https://www.ssldragon.com/blog/symmetric-asymmetric-encryption/#asymmetric-encryption-pros-cons" target="	_blank">(Gitlan,2024)</a>
+          </li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Examples</td>
+      <td>Advanced Encryption Standard (AES),Data Encryption Standard (DES)Triple Data Encryption Standard (3DES), Blowfish, Twofish
+      	<a href=" https://preyproject.com/blog/types-of-encryption-symmetric-or-asymmetric-rsa-or-aes" target="	_blank">(Poggi, 2021)</a></td>
+      <td>RSA, Diffie-Hellman, and Elliptic Curve Cryptography (ECC).
+      	<a href=" https://preyproject.com/blog/types-of-encryption-symmetric-or-asymmetric-rsa-or-aes" target="	_blank">(Poggi, 2021)</a></td>
+    </tr>
+  </table>
+  <p>We can mix the two methods and use them together to become a hybrid cryptosystem which mixes the convenience of an asymmetric encryption scheme with the effectiveness of a symmetric encryption scheme
+  	<a href=" https://www.geeksforgeeks.org/what-is-hybrid-cryptosystem-in-ethical-hacking/" target="	_blank">(What Is Hybrid Cryptosystem in Ethical Hacking?, 2022)</a>. 
+  	And the examples below are constantly improving for various reasons. For example, AES was developed to address the vulnerability of its predecessor, DES, which had a short encryption key length susceptible to brute force attacks.
+  	<a href=" https://preyproject.com/blog/types-of-encryption-symmetric-or-asymmetric-rsa-or-aes" target="	_blank">(Poggi, 2021)</a>
+  	Finally, we may conclude that data security has improved
+</p>
+
+  <div><h5><em>CS1102 - Course Project - 2023/2024 Semester B</em></h5></div>
+</body>
+</html>
