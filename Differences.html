@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CB1102 Differences and similarities of HTTP and HTTPS</title>
+	<style type="text/css">
+		body{
+			background-color: #EEDF95;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		h2{
+			color: darkblue;
+		}
+
+		h3{
+			color:darkred;
+		}
+
+		h5{
+      		color: grey;
+      		font-family:sans-serif ;
+   		 }
+
+		table {
+			border-collapse: collapse; width: 80%;
+		}
+
+		th,td{
+			border: 2px solid black; padding: 6px; text-align: left;
+		}
+
+		th{
+			font-weight: bold;
+		}
+
+		thead{
+			background-color: #f2f2f2;
+		}	
+
+		p{
+			margin: 10px 0; line-height: 1.5;
+		}
+
+		span{
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<h2>The DIFFERENCES between HTTP and HTTPS</h2>
+	<table>
+		<thead>
+			<tr>
+				<th colspan="2">DIFFERENCES </th>
+				<th>HTTP</th>
+				<th>HTTPS</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td colspan="2">URL Scheme</td>
+				<td>"http://"</td>
+				<td>"https://"</td>
+			</tr>
+			<tr>
+				<td colspan="2">Data Encryption</td>
+				<td>No encrytion provided</td>
+				<td>SSL/TLS in data transmission</td>
+			</tr>
+			<tr>
+				<td colspan="2"><a href="https://www.clickssl.net/blog/port-80-http-vs-port-443-https" target="	_blank"> Port</a></td>
+				<td>Port 80</td>
+				<td>Port 433</td>
+			</tr>
+			<tr>
+				<td colspan="2"> Authentication</td>
+				<td>No build in mechanisms</td>
+				<td>Digital certificates</td>
+			</tr>
+			<tr>
+				<td colspan="2">Security</td>
+				<td>Susceptible</td>
+				<td>Secured/encrted</td>
+			</tr>
+		</tbody>
+	</table>
+	<h3>URL Scheme</h3>
+	<p>To visit the website of HTTP and HTTPS, they have different URL formats.</p>	
+	<p>For HTTP, the link of the http website must start from “ http://“. A client will request the http from the server, and the server responds with the corresponding HTTP to the client.</p>
+	<p>For the HTTPS, the link will start from “https://“. Similar to HTTP, a client sends an HTTPS request to the server,but before transferring the data, the client and the server establish a secured and encrypted connection.</p>
+	
+
+	<h3>Data Encrytion</h3>
+	<p>HTTP does not provide encryption in data transfer. It transmits the data in plain text.</p>
+	<p>HTTPS provides <a href="https://aws.amazon.com/what-is/ssl-certificate/" target="_blank">SSL (Secure Sockets Layer)/TLS (Transport Layer Security)</a> encryption which encrypts the data into encrypted formats instead of plain text to protect the confidentiality and integrity of data.</p>
+
+	<h3>Port</h3>
+	<p>HTTP uses port 80 as the default port for data communications</p>
+	<p>While HTTPS makes use of port 443 as the default port for communication.</p>
+
+	<h3>Authentication</h3>
+	<p>	 HTTP does not provide any built in authentication mechanisms.</p>
+	<p>HTTPS provides a mechanism for clients to verify the identity of the server. The mechanism is done through<a href="https://www.verticalrail.com/kb/ssl-certificates/" target="_blank"> digital certificates</a> issued by trusted Certificates Authorities (CAs).</p>
+
+#simiarities
+	<h2>The SIMILARITIES between HTTP and HTTPS</h2>
+	<table>
+		<thead>
+			<tr>
+				<th colspan="2">SIMILARITIES </th>
+				<th>HTTP & HTTPS</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td colspan="2"><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods" target="_blank"> Request Method</a></td>
+				<td>GET/POST/PUT/DELETE</td>
+			</tr>
+			<tr>
+				<td colspan="2">Client-server Model</td>
+				<td>Request-response model</td>
+			</tr>
+			<tr>
+				<td colspan="2"> Resource Locating</td>
+				<td><a href="https://www.techtarget.com/whatis/definition/URI-Uniform-Resource-Identifier" target="_blank"> Uniform Resource Identifiers (URIs)</a></td>
+			</tr>
+			<tr>
+				<td colspan="2">Communication</td>
+				<td><a href="https://www.geeksforgeeks.org/protocols-application-layer/" target="_blank"> Application Layer Protocol</a></td>
+			</tr>
+		</tbody>
+	</table>
+	<h3>Request Method</h3>
+	<p>Both HTTP and HTTPS use the same request methods to interact with web resources.</p>
+	<p>Common methods include<span> GET</span> (retrieve a resource),<span> POST</span> (submit data to be processed),<span> PUT</span> (store or update a resource), and<span> DELETE</span> (remove a resource).</p>
+	<p>These method allows clients to interact with the server and perform actions such as retrieving, creating, updating resources.</p>
+
+	<h3>Client-server Model</h3>
+	<p>Both HTTP AND HTTPS follow a <a href="https://www.geeksforgeeks.org/client-server-model/#:~:text=The%20Client-server%20model%20is%20a%20distributed%20application%20structure,service%2C%20called%20servers%2C%20and%20service%20requesters%20called%20clients." target="_blank"> client-server model</a>, where the client initiates a request, and the server responds with the requested content or performs the requested action</p>
+
+	<h3>Resource Locating</h3>
+	<p>Both HTTP and HTTPS use Uniform Resource Identifiers (URIs) to identify and locate web resources on the internet. URIs can be used to specify the location of web pages, imagesm documents, or any other resource that can be accessed via a URL.</p>
+
+	<h3>Communication</h3>
+	<p>Both HTTP and HTTPS are <a href="https://www.geeksforgeeks.org/protocols-application-layer/" target="_blank">application layer protocols</a> used for communication between a client (such as a web browser) and a server</p>
+
+  <div><h5><em>CS1102 - Course Project - 2023/2024 Semester B</em></h5></div>
+</body>
+</html>
